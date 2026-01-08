@@ -55,7 +55,7 @@ header {
     color: #e94e77; /* Cor de destaque, tipo Pixar */
 }
 
-/* Estilo para o Vencedor */
+/* Estilo para o Vencedor e Oculto */
 .hidden {
     display: none !important;
 }
@@ -86,4 +86,29 @@ button {
 
 button:hover {
     background-color: #c73c65;
+}
+
+/* NOVO: Estilos do Seletor de Categoria */
+#category-selector {
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+}
+
+#category-selector h2 {
+    color: #4a90e2;
+}
+
+#category-selector button {
+    font-size: 1.2em;
+    padding: 15px 30px;
+    margin: 10px;
+    background-color: #4a90e2; 
+}
+
+#category-selector button:hover {
+    background-color: #3b73b5;
 }

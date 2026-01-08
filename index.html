@@ -9,39 +9,36 @@
 <body>
 
     <header>
-        <h1>🏆 Batalha de Filmes Infantis 🏆</h1>
-        <p>Escolha seu favorito a cada rodada. O último filme de pé será o grande vencedor!</p>
+        <h1>🏆 Batalha de Escolhas 🏆</h1>
+        <p>Escolha seu favorito a cada rodada. O último de pé será o grande vencedor!</p>
     </header>
 
     <main id="game-container">
-        <h2>Rodada <span id="round-number">1</span>:</h2>
         
-        <div id="movie-options">
-            <div class="movie-card" data-id="">
-                <img src="placeholder.jpg" alt="Filme A">
-                <h3>Nome do Filme A</h3>
-            </div>
-
-            <div class="separator">OU</div>
-
-            <div class="movie-card" data-id="">
-                <img src="placeholder.jpg" alt="Filme B">
-                <h3>Nome do Filme B</h3>
-            </div>
+        <div id="category-selector">
+            <h2>Escolha a Modalidade:</h2>
+            <button onclick="startGame('Infantil')">🎬 Filmes Infantis</button>
+            <button onclick="startGame('Herois')">🦸 Super-Heróis</button>
         </div>
+        <div id="game-content" class="hidden"> 
+            <h2>Rodada <span id="round-number">1</span>:</h2>
+            
+            <div id="movie-options">
+                </div>
 
-        <div id="winner-display" class="hidden">
-            <h2>🎉 O VENCEDOR É... 🎉</h2>
-            <div class="movie-card winner-card">
-                <img id="winner-img" src="placeholder.jpg" alt="Vencedor">
-                <h3 id="winner-title">Título do Vencedor</h3>
+            <div id="winner-display" class="hidden">
+                <h2>🎉 O GRANDE VENCEDOR É... 🎉</h2>
+                <div class="movie-card winner-card">
+                    <img id="winner-img" src="placeholder.jpg" alt="Vencedor">
+                    <h3 id="winner-title">Título do Vencedor</h3>
+                </div>
+                <button onclick="location.reload()">Começar Novo Jogo</button>
             </div>
-            <button onclick="startGame()">Começar Novo Jogo</button>
         </div>
     </main>
 
     <footer>
-        <p>© 2026 Batalha de Filmes | Dreamworks, Disney, Pixar, etc.</p>
+        <p>© 2026 Batalha de Filmes | Dreamworks, Disney, Pixar, Marvel, DC, etc.</p>
     </footer>
 
     <script src="script.js"></script>
