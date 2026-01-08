@@ -1,0 +1,89 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #89c4f4, #f7d1d1); /* Fundo suave de filme */
+    color: #333;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #4a90e2; /* Azul Dreamworks/Disney */
+    color: white;
+    padding: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#game-container {
+    padding: 40px 20px;
+}
+
+#movie-options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 30px;
+    flex-wrap: wrap; /* Para telas menores */
+}
+
+.movie-card {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+    width: 250px;
+    padding: 15px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.movie-card:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.movie-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.separator {
+    font-size: 2em;
+    font-weight: bold;
+    color: #e94e77; /* Cor de destaque, tipo Pixar */
+}
+
+/* Estilo para o Vencedor */
+.hidden {
+    display: none !important;
+}
+
+.winner-card {
+    background-color: #ffd700; /* Dourado */
+    box-shadow: 0 0 30px #ffd700;
+    display: inline-block;
+    animation: pulse 1.5s infinite alternate;
+}
+
+@keyframes pulse {
+    from { box-shadow: 0 0 20px #ffd700; }
+    to { box-shadow: 0 0 40px #ffcc00; }
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    margin-top: 20px;
+    background-color: #e94e77;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #c73c65;
+}
